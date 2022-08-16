@@ -199,7 +199,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See the [LICENSE](./LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,9 +225,9 @@ Thank you very much to everyone who has contributed to this project in one way o
 <br />
 Notable contributors are listed as follows:
 
-* [Project Code](https://github.com/rodriguez-moon)
-* [Project Logo](https://github.com/creecros/simple_logo_gen)
-* [`README.md` Template](https://github.com/othneildrew/Best-README-Template)
+* Project Code - [rodriguez-moon](https://github.com/rodriguez-moon)
+* Project Logo - [creecros](https://github.com/creecros/simple_logo_gen)
+* `README.md` Template - [othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
