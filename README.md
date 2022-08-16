@@ -16,7 +16,7 @@ https://github.com/othneildrew/Best-README-Template
   <p align="center">
     A general-purpose bot for the popular voice &amp; text chat platform Discord.
     <br />
-    This bot was written with ❤️ using the library <a href="https://pycord.dev/">Py-Cord</a>.
+    Coded with ❤️ using the <a href="https://pycord.dev/">Py-Cord</a> library.
     <br></br>
     <a href="./docs/DOCS.md"><strong>📄Explore the docs »</strong></a>
     <br></br>
@@ -125,7 +125,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/rodriguez-moon/Cubic-Bot.git
    ```
-3. Install required python packages
+3. Install required Python packages
    ```sh
    python -m pip install -r requirements.txt
    ```
@@ -172,7 +172,7 @@ See the [open issues](https://github.com/rodriguez-moon/Cubic-Bot/issues) for a 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
