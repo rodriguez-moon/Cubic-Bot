@@ -27,6 +27,16 @@ https://github.com/othneildrew/Best-README-Template
     <a href="https://github.com/rodriguez-moon/Cubic-Bot/issues">⚡Request Feature</a>
     <br></br>
 	<a href=https://github.com/rodriguez-moon/Cubic-Bot/graphs/contributors> 
+        <img src=https://img.shields.io/badge/version-1.0.0-a457e7.svg> 
+    </a>
+	<a href=https://github.com/rodriguez-moon/Cubic-Bot/graphs/contributors> 
+        <img src=https://img.shields.io/badge/python-3.10.6-578be7.svg> 
+    </a>
+    <a href="https://github.com/rodriguez-moon/Cubic-Bot/blob/master/LICENSE"> 
+        <img src="https://img.shields.io/github/license/rodriguez-moon/Cubic-Bot.svg?color=e757a0"> 
+    </a>
+  <br>
+	<a href=https://github.com/rodriguez-moon/Cubic-Bot/graphs/contributors> 
         <img src=https://img.shields.io/github/contributors/rodriguez-moon/Cubic-Bot.svg> 
     </a>
 	<a href="https://github.com/rodriguez-moon/Cubic-Bot/network/members"> 
@@ -37,9 +47,6 @@ https://github.com/othneildrew/Best-README-Template
     </a>
     <a href="https://github.com/rodriguez-moon/Cubic-Bot/issues">
         <img src="https://img.shields.io/github/issues/rodriguez-moon/Cubic-Bot.svg"> 
-    </a>
-    <a href="https://github.com/rodriguez-moon/Cubic-Bot/blob/master/LICENSE"> 
-        <img src="https://img.shields.io/github/license/rodriguez-moon/Cubic-Bot.svg"> 
     </a>
   </p>
 </div>
@@ -81,6 +88,7 @@ https://github.com/othneildrew/Best-README-Template
 </h3>
 <br />
 
+ 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
 Here's why:
@@ -98,21 +106,32 @@ Use the `BLANK_README.md` to get started.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To set up Cubic-Bot, please follow the simple steps below. 
+<br>Make sure you have completed the `Prerequisites` before moving on to `Installation`.
 
 ### Prerequisites
 
-In order to run this program, you need to have Python installed on your machine.
-<br />
+In order to run this program, you need to have `Python` installed on your machine.
+<br>
 You can install the latest version of Python at [python.org](https://www.python.org/downloads/).
-<br />
-It is reccomended installing Python version `3.10` or greater, as Cubic-Bot was written in `3.10.6`.
+<br>
+It is strongly reccomended to install Python version `3.10` or greater, as Cubic-Bot was written in Python `3.10.6`.
 
 
-* You can check if you have Python installed using the following command:
+* Check if you have Python installed using the following command:
     ```python
     python --version
+    ```
+
+It is reccomended that `Git` is installed on your machine as well. 
+<br>
+Git allows you to clone this repo, as well contribute to Cubic-Bot.
+<br>
+You can download Git from [git-scm.com](https://git-scm.com/downloads).
+
+* Check if you have Git installed using the following command:
+    ```python
+    git --version
     ```
 
 
@@ -125,13 +144,19 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/rodriguez-moon/Cubic-Bot.git
    ```
-3. Install required Python packages
+3. Move into the newly created directory
    ```sh
-   python -m pip install -r requirements.txt
+   cd ./Cubic-Bot/src
+4. Install the required Python packages
+   ```sh
+   python -m pip install -r ./requirements.txt
    ```
-4. Enter your API key in `config.json`
-   ```json
-   API_KEY = "ENTER YOUR API"
+5. Set up `config.json` with the required values. <br>
+Please check out the [config guide](./docs/CONFIG.md) for detailed instructions.
+
+6. Run the `main.py` file
+   ```python
+   python -m main.py
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
