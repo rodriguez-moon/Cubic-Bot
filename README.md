@@ -13,7 +13,6 @@ https://github.com/othneildrew/Best-README-Template
   <a href="https://github.com/rodriguez-moon/Cubic-Bot">
     <img src="images/logo.png" alt="Logo">
   </a>
-
   <p align="center">
     A general-purpose bot for the popular voice &amp; text chat platform Discord.
     <br />
@@ -43,13 +42,6 @@ https://github.com/othneildrew/Best-README-Template
         <img src="https://img.shields.io/github/license/rodriguez-moon/Cubic-Bot.svg"> 
     </a>
   </p>
-
-  <!--
-  <h3 align="center">Cubic-Bot</h3>
-  -->
-  [📄**Explore the docs »**](./docs/DOCS.md)
-
-
 </div>
 
 
