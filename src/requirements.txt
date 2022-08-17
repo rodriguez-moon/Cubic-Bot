@@ -1,0 +1,10 @@
+# make requests asynchronously
+aiohttp
+# colourful printing
+colorama
+# discord api wrapper
+py-cord
+# manage databases
+pysqlite3
+# asynchronous database management
+aiosqlite
