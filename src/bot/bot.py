@@ -29,12 +29,11 @@ class CubicBot(commands.Bot):
     async def on_connect(self):
         print(f"{tk.get_time()} Connected to discord.com")
 
-    # discord periodically disconnects users
-    # may uncomment if an 'on_reconnect' event exists
-    """
     async def on_disconnect(self):
         print(f"{tk.get_time()} Disconnected from discord.com")
-    """
+
+    async def on_resume():
+        print(f"{tk.get_time()} Reconnected to discord.com")
 
     async def on_message(self, message):
         if message.guild is None:
