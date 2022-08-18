@@ -1,5 +1,4 @@
 {
     "bot-token": "BOT-TOKEN-HERE",
-    "owners": [],
-    "api-key": "API-KEY-HERE"
+    "owners": []
 }
