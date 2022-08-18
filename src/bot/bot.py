@@ -8,9 +8,24 @@ from utils import toolkit as tk
 
 
 class CubicBot(commands.Bot):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, config: dict):
+        self.config = config
         self.version = "1.0.0"
+        super().__init__(
+            reconnect=True,
+            help_command=None,
+            intents=discord.Intents(
+                bans=True,
+                guilds=True,
+                members=True,
+                messages=True,
+                reactions=True,
+                webhooks=True,
+            ),
+            owner_ids=config["owners"],
+            status=discord.Status.idle, # idle moon :)
+            allowed_mentions=discord.AllowedMentions(everyone=False),
+        )
 
         # unused database & cogs implementation
         """
