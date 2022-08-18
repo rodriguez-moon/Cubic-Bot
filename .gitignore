@@ -131,3 +131,7 @@ dmypy.json
 # pipenv
 Pipfile
 Pipfile.lock
+
+# ignore config file 
+# I don't want to accidentally commit my token :)
+src/config.json
