@@ -2,6 +2,7 @@ import os
 
 import discord
 from discord.ext import commands
+from discord.ext.commands import is_owner
 
 # from .classes import DatabaseManager
 from utils import toolkit as tk
@@ -11,6 +12,12 @@ class CubicBot(commands.Bot):
     def __init__(self, config: dict):
         self.config = config
         self.version = "1.0.0"
+        self.cog_list = (
+            "example1", # cogs/example1.py
+            "example2", # cogs/example2.py
+            "example3", # cogs/example3.py
+        )
+
         super().__init__(
             reconnect=True,
             help_command=None,
@@ -27,11 +34,7 @@ class CubicBot(commands.Bot):
             allowed_mentions=discord.AllowedMentions(everyone=False),
         )
 
-        for cog in (
-            "example1", # cogs/example1.py
-            "example2", # cogs/example2.py
-            "example3", # cogs/example3.py
-        ):
+        for cog in self.cog_list:
             self.load_extension(f"cogs.{cog}")
 
         # unused database & cogs implementation
@@ -58,3 +61,16 @@ class CubicBot(commands.Bot):
         if message.guild is None:
             return
         await self.process_commands(message)
+
+    @discord.slash_command()
+    async def ping(self, ctx):
+        await ctx.respond("Pong!")
+
+    @discord.slash_command(name="reload", description="Reloads all command extensions")
+    @is_owner()
+    async def reload_cogs(self, ctx: discord.ApplicationContext) -> None:
+        for cog in dict(self.extensions):
+            self.unload_extension(cog)
+        for cog in self.cog_list:
+            self.load_extension(f"cogs.{cog}")
+        await ctx.respond(f"> Successfully reloaded extensions", ephemeral=True)
